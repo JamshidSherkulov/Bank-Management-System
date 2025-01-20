@@ -1,0 +1,25 @@
+In the Bank Account Management system, the SavingsAccount and CurrentAccount classes are specialized subclasses that extend the base class BankAccount.
+Their roles are to represent different types of bank accounts with unique behaviors and properties. Here's a detailed explanation of each:
+
+1. SavingsAccount
+The SavingsAccount class models a bank account primarily used for saving money, often earning interest over time.
+
+Role:
+To provide a safe place for users to save money while earning interest.
+To enforce restrictions on withdrawals (e.g., no overdrafts).
+
+2. CurrentAccount
+The CurrentAccount class models a bank account designed for frequent transactions, such as those used by businesses or professionals.
+
+Role:
+To support day-to-day transactions with more flexibility than a savings account.
+To allow overdrafts (negative balances up to a certain limit).
+
+Relation to BankAccount:
+Both SavingsAccount and CurrentAccount inherit from BankAccount, which serves as a base class defining common properties and methods like:
+
+accountNumber
+accountHolder
+balance
+Methods such as deposit(), withdraw(), and checkBalance().
+The base class ensures shared functionality, while the subclasses introduce specialized behaviors for savings and current accounts.
